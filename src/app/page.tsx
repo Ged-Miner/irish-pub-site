@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Menu from "@/components/menu";
+import PhotoGallery from "@/components/PhotoGallery";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -50,6 +51,15 @@ export default function Home() {
     }
   ]
 
+  const galleryPhotos = [
+    { src: "https://images.unsplash.com/photo-1485686531765-ba63b07845a7", alt: "Cozy pub interior", title: "Our Warm Interior" },
+    { src: "https://images.unsplash.com/photo-1546622891-02c72c1537b6", alt: "Bar with taps", title: "Premium Bar Selection" },
+    { src: "https://images.unsplash.com/photo-1645453014403-4ad5170a386c", alt: "Traditional Irish food", title: "Hearty Irish Cuisine" },
+    { src: "https://images.unsplash.com/photo-1671368913134-c211bc02487f", alt: "Customers watching soccer", title: "Live Soccer Games" },
+    { src: "https://images.unsplash.com/photo-1632293416349-4a3ff46e3572", alt: "Guinness being poured", title: "Perfect Pint Every Time" },
+    { src: "https://images.unsplash.com/photo-1568644396922-5c3bfae12521", alt: "Friends enjoying drinks", title: "Great Company" }
+  ]
+
   return (
     <div className="min-h-screen">
       <Header
@@ -58,6 +68,7 @@ export default function Home() {
       />
       <Hero />
       <Menu categories={menuData} />
+      <PhotoGallery photos={galleryPhotos} />
       <About features={pubFeatures} />
       <Footer />
     </div>
