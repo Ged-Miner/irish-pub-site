@@ -62,10 +62,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      <Header
-        title="Scéal eile"
-        subtitle="Traditional Pub | Ryogoku, Tokyo"
-      />
+      <Header />
       <Hero />
       <Menu categories={menuData} />
       <PhotoGallery photos={galleryPhotos} />

@@ -21,9 +21,9 @@ export default function PhotoGallery({ photos }: PhotoGalleryProps) {
   }
 
   return (
-    <section className="py-16 px-4 bg-white">
+    <section className="py-16 px-4 bg-slate-100">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-emerald-950 mb-8">
           Experience Scéal eile
         </h2>
 
@@ -43,8 +43,8 @@ export default function PhotoGallery({ photos }: PhotoGalleryProps) {
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
-                <div className="inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-end">
-                  <div className="p-4 text-white text-shadow-lg transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <div className="inset-0 bg-emerald-950 bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-end">
+                  <div className="p-4 text-slate-100 text-shadow-lg transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                     <h3 className="font-semibold">{photo.title}</h3>
                   </div>
                 </div>
@@ -56,7 +56,7 @@ export default function PhotoGallery({ photos }: PhotoGalleryProps) {
         {/* Modal for enlarged photo */}
         {selectedPhoto !== null && (
           <div
-            className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
+            className="fixed inset-0 bg-emerald-950 bg-opacity-75 flex items-center justify-center z-50 p-4"
             onClick={closeModal}
           >
             <div className="relative max-w-4xl max-h-full">
@@ -69,7 +69,7 @@ export default function PhotoGallery({ photos }: PhotoGalleryProps) {
               />
               <button
                 onClick={closeModal}
-                className="absolute top-4 right-4 text-white text-2xl bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-75 transition-colors"
+                className="absolute top-4 right-4 text-slate-100 text-2xl bg-emerald-950 bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-75 transition-colors"
               >
                 ×
               </button>
