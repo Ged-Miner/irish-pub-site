@@ -23,7 +23,7 @@ export default function Navbar() {
 
   return (
     <nav id="navbar" className="bg-emerald-950 text-slate-100 shadow-lg fixed top-0 left-0 right-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -46,7 +46,7 @@ export default function Navbar() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-slate-300 hover:text-slate-100 px-3 py-2 text-sm font-medium transition-colors duration-200 hover:bg-slate-700 rounded-md"
+                  className="text-slate-200 hover:text-slate-100 px-3 py-2 text-sm font-medium transition-colors duration-200 hover:bg-slate-900 rounded-md"
                 >
                   {item.name}
                 </Link>
