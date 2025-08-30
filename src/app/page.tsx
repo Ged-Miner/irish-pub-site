@@ -1,7 +1,7 @@
-import Header from "@/components/Header";
+import Header from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Menu from "@/components/menu";
+import Menu from "@/components/Menu";
 import PhotoGallery from "@/components/PhotoGallery";
 import Footer from "@/components/Footer";
 
@@ -26,38 +26,41 @@ export default function Home() {
 
   const menuData = [
     {
-      name: "Appetizers",
+      name: "Beers and Ciders on Tap",
       items: [
-        { name: "Irish Potato Skins", description: "Crispy potato skins with bacon, cheese, and chives", price: "€8.50" },
-        { name: "Guinness Cheese Dip", description: "Warm cheese dip infused with Guinness, served with soda bread", price: "€7.00" },
-        { name: "Smoked Salmon Boxty", description: "Traditional potato pancake topped with smoked salmon and crème fraîche", price: "€12.00" }
+        { name: "Guinness", description: "description of the beer", price1: "Pint: ¥1200", price2: "1/2 Pint: 750" },
+        { name: "O'Hara's 51st State IPA", description: "description of the beer", price1: "Pint: ¥1300", price2: "1/2 Pint: 850" },
+        { name: "Yebisu Amber Lager", description: "description of the beer", price1: "Pint: ¥1150", price2: "Glass: 850" },
+        { name: "Sapporo Black Label Lager", description: "description of the beer", price1: "Pint: ¥1050", price2: "Mug (400ml): 800" },
+        { name: "Magners Cider", description: "description of the cider", price1: "Pint: ¥1200", price2: "1/2 Pint: 750" }
       ]
     },
     {
-      name: "Mains",
+      name: "Whiskeys",
       items: [
-        { name: "Fish & Chips", description: "Beer-battered cod with hand-cut chips and mushy peas", price: "€16.50" },
-        { name: "Irish Stew", description: "Tender lamb with potatoes, carrots, and fresh herbs", price: "€18.00" },
-        { name: "Bangers & Mash", description: "Traditional Irish sausages with colcannon and onion gravy", price: "€15.00" }
+        { name: "Irish Whiskeys", description: "list of the whiskeys", price1: "", price2: "" },
+        { name: "Scotch Whiskeys", description: "list of the whiskeys", price1: "", price2: "" },
+        { name: "Japanese Whiskeys", description: "list of the whiskeys", price1: "", price2: "" },
+        { name: "American Whiskeys", description: "list of the whiskeys", price1: "", price2: "" }
       ]
     },
     {
-      name: "Drinks",
+      name: "Cocktails, Wines, and Soft Drinks",
       items: [
-        { name: "Guinness Pint", description: "The perfect pint, poured the traditional way", price: "€5.50" },
-        { name: "Irish Coffee", description: "Hot coffee with Irish whiskey, sugar, and cream", price: "€7.00" },
-        { name: "Whiskey Flight", description: "Sample three premium Irish whiskeys", price: "€18.00" }
+        { name: "Gin", description: "list of the whiskeys", price1: "", price2: "" },
+        { name: "Vodka", description: "list of the whiskeys", price1: "", price2: "" },
+        { name: "Rum", description: "list of the whiskeys", price1: "", price2: "" },
+        { name: "Tequila", description: "list of the whiskeys", price1: "", price2: "" },
+        { name: "Others", description: "list of the whiskeys", price1: "", price2: "" }
       ]
     }
   ]
 
   const galleryPhotos = [
-    { src: "https://images.unsplash.com/photo-1485686531765-ba63b07845a7", alt: "Cozy pub interior", title: "Our Warm Interior" },
-    { src: "https://images.unsplash.com/photo-1546622891-02c72c1537b6", alt: "Bar with taps", title: "Premium Bar Selection" },
-    { src: "https://images.unsplash.com/photo-1645453014403-4ad5170a386c", alt: "Traditional Irish food", title: "Hearty Irish Cuisine" },
-    { src: "https://images.unsplash.com/photo-1671368913134-c211bc02487f", alt: "Customers watching soccer", title: "Live Soccer Games" },
-    { src: "https://images.unsplash.com/photo-1632293416349-4a3ff46e3572", alt: "Guinness being poured", title: "Perfect Pint Every Time" },
-    { src: "https://images.unsplash.com/photo-1568644396922-5c3bfae12521", alt: "Friends enjoying drinks", title: "Great Company" }
+    { src: "/fishandchips.jpg", alt: "fish and chips", title: "Fish and Chips" },
+    { src: "/beefguinessstew.jpg", alt: "beef guinness stew", title: "Beef Guinness Stew" },
+    { src: "/bangersandmash.jpg", alt: "bangers and mash", title: "Bangers and Mash" },
+    { src: "/shepherdspie.jpg", alt: "shepherd's pie", title: "Shepherd's Pie" }
   ]
 
   return (

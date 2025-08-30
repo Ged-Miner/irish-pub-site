@@ -8,7 +8,7 @@ interface AboutProps {
 
 export default function About({ features }: AboutProps) {
   return (
-    <section className="py-16 px-4 bg-slate-100">
+    <section id="about" className="py-16 px-4 bg-slate-100">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-emerald-950 mb-4">
           About Us

@@ -21,14 +21,14 @@ export default function PhotoGallery({ photos }: PhotoGalleryProps) {
   }
 
   return (
-    <section className="py-16 px-4 bg-slate-100">
+    <section id="food" className="py-16 px-4 bg-slate-100">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-emerald-950 mb-8">
-          Experience Scéal eile
+          Food Menu
         </h2>
 
         {/* Photo Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md sm:max-w-2xl mx-auto">
           {photos.map((photo, index) => (
             <div
               key={index}
@@ -40,12 +40,12 @@ export default function PhotoGallery({ photos }: PhotoGalleryProps) {
                   src={photo.src}
                   alt={photo.alt}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="absolute object-cover group-hover:scale-105 transition-transform duration-300"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
-                <div className="inset-0 bg-emerald-950 bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-end">
-                  <div className="p-4 text-slate-100 text-shadow-lg transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                    <h3 className="font-semibold">{photo.title}</h3>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end">
+                  <div className="p-4 text-white">
+                    <h3 className="text-xl font-semibold drop-shadow-lg">{photo.title}</h3>
                   </div>
                 </div>
               </div>
@@ -56,7 +56,7 @@ export default function PhotoGallery({ photos }: PhotoGalleryProps) {
         {/* Modal for enlarged photo */}
         {selectedPhoto !== null && (
           <div
-            className="fixed inset-0 bg-emerald-950 bg-opacity-75 flex items-center justify-center z-50 p-4"
+            className="fixed inset-0 bg-black/85 flex items-center justify-center z-50 p-4"
             onClick={closeModal}
           >
             <div className="relative max-w-4xl max-h-full">
@@ -69,7 +69,7 @@ export default function PhotoGallery({ photos }: PhotoGalleryProps) {
               />
               <button
                 onClick={closeModal}
-                className="absolute top-4 right-4 text-slate-100 text-2xl bg-emerald-950 bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-75 transition-colors"
+                className="absolute top-4 right-4 text-slate-100 text-2xl bg-emerald-950/50 rounded-full w-10 h-10 flex items-center justify-center hover:bg-emerald-950/75 transition-colors"
               >
                 ×
               </button>
