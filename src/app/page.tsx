@@ -11,10 +11,10 @@ export default function Home() {
     {
       name: "Beers and Ciders on Tap",
       items: [
-        { name: "Guinness", description: "The most famous Irish stout, smooth, dark, and creamy, served with a signature shamrock in the head", price1: "Pint: ¥1200", price2: "1/2 Pint: 750" },
+        { name: "Guinness", description: "Ireland's most famous stout. Smooth, dark, and creamy, served with a shamrock drawn in the head.", price1: "Pint: ¥1200", price2: "1/2 Pint: 750" },
         { name: "O'Hara's 51st State IPA", description: "A bold Irish craft beer with bright tropical hops and a juicy, full-bodied kick.", price1: "Pint: ¥1300", price2: "1/2 Pint: 850" },
-        { name: "Yebisu Amber Lager", description: "A rich Japanese lager with mellow richness and caramel undertones.", price1: "Pint: ¥1150", price2: "Glass: 850" },
-        { name: "Sapporo Black Label Lager", description: "A refreshing Japanese classic, a smooth and clean balance of malts and hops.", price1: "Pint: ¥1050", price2: "Mug (400ml): 800" },
+        { name: "Yebisu Amber Lager", description: "A Japanese red lager with mellow richness and caramel undertones.", price1: "Pint: ¥1150", price2: "Glass: 850" },
+        { name: "Sapporo Black Label Lager", description: "A refreshing Japanese classic, a pale lager with a clean balance of malts and hops.", price1: "Pint: ¥1050", price2: "Mug (400ml): 800" },
         { name: "Magners Cider", description: "Ireland's oldest cider, crafted with fresh apples for a light and crisp taste.", price1: "Pint: ¥1200", price2: "1/2 Pint: 750" }
       ]
     },

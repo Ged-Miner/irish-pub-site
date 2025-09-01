@@ -23,7 +23,7 @@ export default function Menu({ categories }: MenuProps) {
 
   return (
     <section id="menu" className="py-16 px-4 bg-slate-100">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto mt-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
           Drink Menu
         </h2>

@@ -22,7 +22,7 @@ export default function PhotoGallery({ photos }: PhotoGalleryProps) {
 
   return (
     <section id="food" className="py-16 px-4 bg-slate-100">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto mt-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-emerald-950 mb-8">
           Food Menu
         </h2>
