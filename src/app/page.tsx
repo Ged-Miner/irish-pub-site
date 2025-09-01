@@ -28,13 +28,13 @@ export default function Home() {
       ]
     },
     {
-      name: "Cocktails, Wines, and Soft Drinks",
+      name: "Cocktails, Wines, & Soft Drinks",
       items: [
-        { name: "Gin", description: "Gin & Tonic", price1: "", price2: "" },
-        { name: "Vodka", description: "list of the whiskeys", price1: "", price2: "" },
-        { name: "Rum", description: "list of the whiskeys", price1: "", price2: "" },
-        { name: "Tequila", description: "list of the whiskeys", price1: "", price2: "" },
-        { name: "Others", description: "list of the whiskeys", price1: "", price2: "" }
+        { name: "Gin", description: "Gin & Tonic, ...", price1: "", price2: "" },
+        { name: "Vodka", description: "list of the vodka drinks", price1: "", price2: "" },
+        { name: "Rum", description: "list of the rum drinks", price1: "", price2: "" },
+        { name: "Tequila", description: "list of the tequila drinks", price1: "", price2: "" },
+        { name: "Others", description: "list of the soft drinks etc.", price1: "", price2: "" }
       ]
     }
   ]

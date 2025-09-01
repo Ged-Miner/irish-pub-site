@@ -34,7 +34,7 @@ export default function Menu({ categories }: MenuProps) {
             <button
               key={index}
               onClick={() => setActiveCategory(index)}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${
+              className={`flex-1/2 sm:flex-1 px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${
                 activeCategory === index
                   ? 'bg-emerald-600 text-slate-100 shadow-lg'
                   : 'bg-slate-200 text-emerald-950 hover:bg-gray-100'
