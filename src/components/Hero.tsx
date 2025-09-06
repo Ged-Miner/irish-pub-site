@@ -47,11 +47,11 @@ export default function Hero() {
       })}
 
       {/* Content */}
-      <div className="relative z-20 max-w-4xl mx-auto text-center px-4">
-        <h1 className="text-3xl md:text-5xl font-bold text-slate-50 mb-6">
+      <div style={{ fontFamily: 'Sherwood' }} className="relative z-20 max-w-4xl mx-auto text-center px-4">
+        <h1 className="text-3xl md:text-6xl text-slate-50 mb-6">
           Scéal eile
         </h1>
-        <h2 className="text-1xl md:text-3xl font-thin text-slate-50 mb-6">
+        <h2 className="text-1xl md:text-3xl text-slate-50 mb-6">
           Your Local Pub in Ryogoku
         </h2>
       </div>
