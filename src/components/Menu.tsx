@@ -47,11 +47,11 @@ export default function Menu({ categories }: MenuProps) {
 
         {/* Menu Items */}
         <div className="bg-slate-50 rounded-lg shadow-md p-6">
-          <h3 className="text-2xl font-bold text-slate-600 mb-6 text-center">
+          <h3 className="text-2xl font-bold text-emerald-700 mb-6 text-center">
             {categories[activeCategory].name}
           </h3>
 
-          <div className="space-y-4">
+          <div className="space-y-4 px-0 sm:px-6">
             {categories[activeCategory].items.map((item, index) => (
               <div key={index} className="border-b border-slate-200 pb-4 last:border-b-0">
                 <div className="flex justify-between items-start">

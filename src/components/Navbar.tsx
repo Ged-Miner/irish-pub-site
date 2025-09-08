@@ -32,10 +32,9 @@ export default function Navbar() {
               <Image
                 src={"/logo.gif"}
                 alt={"Scéal eile logo"}
-                width={50}
-                height={50}
-                className=""
-                sizes=""
+                width={1732}
+                height={1888}
+                className="w-10 h-auto"
               />
             </Link>
           </div>

@@ -1,8 +1,8 @@
 @import "tailwindcss";
 @font-face {
   font-family: 'Sherwood';
-  src: url('/fonts/sherwood.woff2') format('woff2');
-       /* url('/fonts/Sherwood.woff') format('woff'); */
+  src: url('/fonts/sherwood-webfont.woff2') format('woff2'),
+       url('/fonts/Sherwood-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
